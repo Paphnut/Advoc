@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Mobile App 001
+title = Advoc 001
 
 # (str) Package name
-package.name = mobileapp001
+package.name = advoc001
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.wiseplat
+package.domain = ru.blagar
 
 # (str) Source code where the main.py live
 source.dir = .
