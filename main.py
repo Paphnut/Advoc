@@ -1,10 +1,8 @@
-from kivymd.app import MDApp
-from kivymd.uix.label import MDLabel
+from kivy.app import App
+from kivy.uix.button import Button
 
-
-class Advoc(MDApp):
+class TestApp(App):
     def build(self):
-        return MDLabel(text="Hello, Advoc!", halign="center")
+        return Button(text='Hello World')
 
-
-Advoc().run()
+TestApp().run()
