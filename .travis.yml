@@ -24,24 +24,24 @@ install:
   - pip3 install --upgrade Cython==0.29.19 virtualenv
   - export PATH=$PATH:~/.local/bin/
   - ls -la
-  - ls bin/ -l
-  - gem install dpl --pre
-  - dpl releases --token $GITHUB_TOKEN --file "bin/advoc-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
-  - echo "TODO COMPILE 64bit"
-  - ls -l /home/paphnut/
-  - ls -l /home/paphnut/PycharmProjects/Advoc/
-  - ls -la
-  - rm -r -f .buildozer
-  - ls -la
-  - rm -r -f /home/paphnut/PycharmProjects/Advoc/.buildozer
-  - ls -l /home/paphnut/
-  - ls -l /home/paphnut/PycharmProjects/Advoc/
-  - ls -l
-  - yes | cp -f buildozer.spec
-  - yes | buildozer android debug
+  - echo "TODO COMPILE 32bit"
+  - yes | cp -f buildozer-32bit.spec  buildozer.spec
+  - yes | travis_wait 20 buildozer android debug
   - ls -la
   - ls bin/ -l
   - echo "TODO"
   - gem install dpl --pre
   - dpl releases --token $GITHUB_TOKEN --file "bin/advoc-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
+  - echo "TODO COMPILE 64bit"
+  - ls -la
+  - rm -r -f .buildozer
+  - ls -la
+  - yes | cp -f buildozer-64bit.spec  buildozer.spec
+  - yes | travis_wait 20 buildozer android debug
+  - ls -la
+  - ls bin/ -l
+  - echo "TODO"
+  - gem install dpl --pre
+  - dpl releases --token $GITHUB_TOKEN --file "bin/advoc-0.1-arm64-v8a-debug.apk" --tag_name "v.0.1"
+script:
   - echo "OK"
