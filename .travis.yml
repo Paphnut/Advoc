@@ -6,21 +6,20 @@ python:
   - 3.8
 
 install:
-  - sudo apt -y install python3-distutils
-  - sudo apt -y install python3-pip
-  - sudo apt install -y git
+  - apt -y install --user python3-distutils
+  - apt -y install --user python3-pip
+  - apt install --user -y git
   - git clone https://github.com/kivy/buildozer.git
-  - python3 -m site
-  - ls -l
+  - python3 e
+  - ls 
   - cd buildozer
   - ls -l
-  - python3 setup.py install
+  - python3 setup.py in s 
+  - ls -l ..
   - ls -l
-  - cd ..
-  - ls -l
-
-  - sudo apt update
-  - sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+ 
+  apt update --user
+  - apt install --user -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
   - pip3 install --upgrade Cython==0.29.19 virtualenv
   - export PATH=$PATH:~/.local/bin/
   - ls -l
