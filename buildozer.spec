@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Advoc 001
+title = Mobile App 001
 
 # (str) Package name
-package.name = advoc001
+package.name = mobileapp001
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = ru.blagar
+package.domain = org.wiseplat
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -28,7 +28,7 @@ source.dir = .
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 0.3
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0, kivymd, https://github.com/kivymd/KivyMD/archive/3274d62.zip, sdl2_ttf==2.0.15
+requirements = python3,kivy==2.0.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
