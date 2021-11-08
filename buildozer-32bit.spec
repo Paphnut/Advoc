@@ -7,7 +7,7 @@ title = Advoc
 package.name = advoc
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = ru.blagar
+package.domain = ru.blaga
 
 # (str) Source code where the main.py live
 source.dir = .
