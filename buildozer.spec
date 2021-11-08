@@ -43,10 +43,10 @@ requirements = python3,kivy==2.0.0
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/logo/presplash512okmin.png
+presplash.filename = %(source.dir)s/data/logo/presplash512okmin.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/logo/logo512min.png
+icon.filename = %(source.dir)s/data/logo/logo512min.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
@@ -97,7 +97,7 @@ fullscreen = 0
 #android.api = 27
 
 # (int) Minimum API your APK will support.
-#android.minapi = 24
+#android.minapi = 21
 
 # (int) Android SDK version to use
 #android.sdk = 20
